@@ -12,10 +12,11 @@ end
 
 def valid_move?(board, index)
   #index is within a range of 0-8 AND board at index is not occupied
-  board[index] = char
+  index.between(0,8) && position_taken?(board, index) == false
 end
 
 def position_taken?(board, index)
+  # if the board and index at set position is blank, then position is empty = false
   if board[index] == "" || board[index] == " " || board[index] == nil
     return false
   else board[index] == "X" || "O"
