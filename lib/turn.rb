@@ -10,21 +10,20 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def valid_move?(board, index)
-  #index is within a range of 0-8 AND board at index is not occupied
-  index.between(0,8) && position_taken?(board, index) == false
-  return true
-else
-  return false
-end
-end
-
 def position_taken?(board, index)
   # if the board and index at set position is blank, then position is empty = false
   if board[index] == "" || board[index] == " " || board[index] == nil
     return false
   else board[index] == "X" || "O"
     return true
+  end
+end
+
+def valid_move?(board, index)
+  if position_taken?(board, index) == false && (index).between?(0,8)
+    return true
+  else
+    return false
   end
 end
 
