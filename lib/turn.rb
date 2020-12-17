@@ -10,7 +10,8 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def valid_move?(board, index, char)
+def valid_move?(board, index)
+  #index is within a range of 0-8 AND board at index is not occupied
   board[index] = char
 end
 
