@@ -34,9 +34,6 @@ def move(board, index, char = "X")
   board[index] = char
 end
 
-def current_player(board)
-  turn_count(board) % 2 == 0? "X" : "O"
-end
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -46,6 +43,6 @@ def turn(board)
     player_move(board, index, current_player(board))
     display_board(board)
   else
-    turn(board)
+    puts "Please enter 1-9:"
   end
 end
