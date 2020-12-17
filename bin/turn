@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
 puts "Welcome to Tic Tac Toe!"
-display_board(board) = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "   |   |   "
+puts "-----------"
+puts "   |   |   "
+puts "-----------"
+puts "   |   |   "
+
 puts "Please enter 1-9:"
 user_input=gets.strip
