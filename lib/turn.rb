@@ -10,7 +10,7 @@ def input_to_index(user_input)
   user_input.to_i-1
 end
 
-def valid_move?(board, index, char = "X")
+def valid_move?(board, index, char)
   board[index] = char
 end
 
@@ -30,7 +30,7 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, index, char = "X")
+def move(board, index, char)
   board[index] = char
 end
 
