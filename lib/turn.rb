@@ -38,9 +38,4 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input=gets.strip
   input_to_index(user_input)
-  if position_taken?(board, position) == false && (position).between?(0,8)
-    return true
-  else
-    return false
-  end
 end
