@@ -42,6 +42,6 @@ def turn(board)
     player_move(board, index)
     display_board(board)
   else
-    turn(board)
+    puts "Please enter 1-9:"
   end
 end
