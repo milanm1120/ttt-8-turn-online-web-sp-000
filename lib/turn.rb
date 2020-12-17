@@ -30,10 +30,6 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, index, char)
-  board[index] = char
-end
-
 
 def turn(board)
   puts "Please enter 1-9:"
